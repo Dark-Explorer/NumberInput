@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val number = inputText.toIntOrNull()
-        if (number == null) {
+        if (number == null || number < 0) {
             textView.text = "Không hợp lệ"
             return
         }
